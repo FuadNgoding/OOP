@@ -4,11 +4,13 @@ public class Main {
     {
     Author author1 = new Author("James Gosling", "Creator of the Java programming language.");
     Author author2 = new Author("Robert C. Martin", "Known for his works on software craftsmanship.");
-    Author author3;
 
     Book book1 = new Book("Java Programming", "123456789", author1);
     Book book2 = new Book("Clean Code", "987654321", author2);
 
+    book1.displayAddBook();
+    book2.displayAddBook();
+    
     Library library = new Library();
 
     library.addBook(book1);
@@ -26,9 +28,9 @@ public class Main {
     borrower.displayBorrowedBooks();
     
     library.displayLibraryBooks();
-    }
+}
     
 public static void main(String[] args) {
             new Main();
-}
+    }
 }
